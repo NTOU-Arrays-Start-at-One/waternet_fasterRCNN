@@ -1,0 +1,12 @@
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/6d86268f-frame12500.jpg 331,254,412,351,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/f5f2535e-frame8000.jpg 501,338,638,491,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/8ec4d0b4-frame8250.jpg 488,293,596,400,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/f6e9c7ef-frame7950.jpg 497,352,644,482,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/97474f03-frame8300.jpg 466,301,578,404,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/38eec6af-frame9200.jpg 405,28,576,177,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/96c85d87-frame12375.jpg 278,340,381,438,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/755caca0-frame690.jpg 17,157,221,411,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/30159e67-frame9750.jpg 185,207,368,398,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/288dd5c4-frame8100.jpg 472,359,591,479,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/eb54894f-frame1840.jpg 310,34,547,273,0
+/home/tana/git/faster-rcnn-pytorch/VOCdevkit/VOC2007/JPEGImages/464171e4-frame2530.jpg 380,296,632,625,0
