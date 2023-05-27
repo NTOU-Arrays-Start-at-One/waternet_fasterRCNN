@@ -15,12 +15,11 @@ from ColorAnalysis import colorAnalysis as ca
 from ColorAnalysis import GUI
 
 # call waternet
-def call_inference(source_path): # inference.py (WaterNet) 
+def call_inference(source_path, weights_path): # inference.py (WaterNet) 
     # 設定參數
     inference_path = os.path.expanduser("waternet/inference.py")
     output_path = os.path.expanduser("output")
-    weights_path = os.path.expanduser("waternet/training/6/last.pt") # 以raw-890訓練的權重
-
+    
     #使用subprocess.call()來呼叫inference.py程式
     subprocess.call([
        "python3", inference_path,
@@ -41,23 +40,35 @@ if __name__ == "__main__":
     crop            = True
     count           = False
     analyze         = False
+
     source_path = os.path.expanduser("input/temp.jpg")
+    # img/frame9125.jpg
+    # img/frame10125.jpg
+    
+    weights_path = os.path.expanduser("waternet/training/6/last.pt") # waternet 預設權重
+    # 以raw-890訓練的權重
+    # waternet/training/6/last.pt
+    # paper的預設權重 
+    # waternet/training/waternet_exported_state_dict-daa0ee.pt
 
     # args
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=str)
+    parser.add_argument("--weights", type=str)
     args = parser.parse_args()
-
-    # waternet
-    if args.source is None:
-        call_inference(source_path)
-    else:
-        source_path = Path(args.source)
-        assert source_path.exists(), f"{args.source} does not exist!"
-        call_inference(source_path)
     
+    # waternet
+    if args.source is not None:
+        source_path = os.path.expanduser(args.source)
+    if args.weights is not None:
+        weights_path = os.path.expanduser(args.weights)
+
+    call_inference(source_path, weights_path)
+
     # frcnn
-    image = Image.open("waternet/output/output/temp.jpg")
+    filename = os.path.basename(source_path)
+    output_path = os.path.expanduser("waternet/output/output/" + filename)
+    image = Image.open(output_path)
     r_image = frcnn.detect_image(image, crop = crop, analyze = analyze)
     r_image.show()
 
@@ -67,5 +78,5 @@ if __name__ == "__main__":
     
     # GUI
     origin = Image.open(source_path)
-    restore = Image.open("waternet/output/output/temp.jpg")
+    restore = Image.open(output_path)
     GUI.imageCompare(cv2.cvtColor(np.array(origin),cv2.COLOR_BGR2RGB), cv2.cvtColor(np.array(restore),cv2.COLOR_BGR2RGB), windows_name="Merged Image2")
