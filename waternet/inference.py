@@ -174,7 +174,8 @@ for fdir in fdirs:
             rgb = cv2.cvtColor(bgr, cv2.COLOR_BGRA2RGB)
 
         # Preprocessing
-        wb, gc, he = transform(rgb)
+        wb, gc, he = transform(rgb) # 白平衡, gamma校正, 直方圖等化
+        # 轉成Torch Tensor
         rgb_ten = arr2ten(rgb)
         wb_ten = arr2ten(wb)
         gc_ten = arr2ten(gc)

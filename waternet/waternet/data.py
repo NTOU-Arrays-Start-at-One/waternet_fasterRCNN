@@ -3,7 +3,7 @@ import numpy as np
 from typing import Tuple
 
 
-def white_balance_transform(im_rgb):
+def white_balance_transform(im_rgb): # 白平衡
     """
     Requires HWC uint8 input
     Originally in SimplestColorBalance.m
@@ -58,21 +58,21 @@ def white_balance_transform(im_rgb):
     return outval.astype(np.uint8)
 
 
-def gamma_correction(im):
+def gamma_correction(im): # gamma校正
     gc = np.power(im / 255, 0.7)
     gc = np.clip(255 * gc, 0, 255)
-    gc = gc.astype(np.uint8)
+    gc = gc.astype(np.uint8) 
     return gc
 
 
-def histeq(im_rgb):
+def histeq(im_rgb): # 直方圖均衡化
     im_lab = cv2.cvtColor(im_rgb, cv2.COLOR_RGB2LAB)
 
     clahe = cv2.createCLAHE(clipLimit=0.1, tileGridSize=(8, 8))
     el = clahe.apply(im_lab[:, :, 0])
 
     im_he = im_lab.copy()
-    im_he[:, :, 0] = el
+    im_he[:, :, 0] = el 
     im_he_rgb = cv2.cvtColor(im_he, cv2.COLOR_LAB2RGB)
 
     return im_he_rgb
@@ -83,8 +83,8 @@ def transform(rgb) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
     transform(rgb) -> wb, gc, he
     """
     # Convenience wrapper
-    wb = white_balance_transform(rgb)
-    gc = gamma_correction(rgb)
-    he = histeq(rgb)
+    wb = white_balance_transform(rgb) # 白平衡
+    gc = gamma_correction(rgb) # gamma校正
+    he = histeq(rgb) # 直方圖均衡化
 
     return wb, gc, he
