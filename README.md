@@ -16,10 +16,8 @@ Features:
 3. Use Delta E and the percentage of color channel differences to analyze the color differences in the color palettes.
 4. Use the segmentation interface to compare the restored images before and after dragging with the mouse.
 
-<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125.jpg?raw=true" alt="frame9125" width="400">
-<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125_waternet.jpg?raw=true" alt="frame9125_waternet" width="400">
-<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true" alt="crop3" width="400">
-<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true" alt="delta_e_1" width="400">
+<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125.jpg?raw=true" alt="frame9125" width="300"><img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125_waternet.jpg?raw=true" alt="frame9125_waternet" width="300">
+<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true" alt="crop3" width="300"><img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true" alt="delta_e_1" width="300">
 
 
 [report](https://hackmd.io/@tana0101/ai_report) <br>
