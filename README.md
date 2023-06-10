@@ -41,6 +41,7 @@ git clone https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN.git
 pip install -r requirements.txt
 ```
 這個指令會安裝此專案所需的所有套件。
+
 注意：此專案使用的 python 版本為 3.8.10 ，若您的 python 版本差距過大，可能會有套件無法正常使用的問題。
 
 <hr>
@@ -57,6 +58,7 @@ git clone https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN.git
 pip install -r requirements.txt
 ```
 This will install all the necessary packages for this project.
+
 Note: This project uses python version 3.8.10. If your python version is too different, there may be problems with some packages.
 
 ## Usage
@@ -72,6 +74,7 @@ optional arguments:
   --weights WEIGHTS  Set the weight path of waternet
 ```
 使用`python process.py --source <image path> --weights <weight path>`，即可將特定影像透過特定的權重還原。
+
 如果不指定位置，則會使用 source: `input/temp.jpg`與 weights: `waternet/training/6/last.pt`。
 
 <hr>
@@ -88,6 +91,7 @@ optional arguments:
 ```
 
 Use `python process.py --source <image path> --weights <weight path>` to restore a specific image with a specific weight.
+
 If the location is not specified, the source: `input/temp.jpg` and weights: `waternet/training/6/last.pt` will be used.
 
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/unwarp_restored_model%20and%20Standard_image.png?raw=true)
