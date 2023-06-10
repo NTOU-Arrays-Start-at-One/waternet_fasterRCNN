@@ -4,9 +4,22 @@
 
 This project aims to use deep learning to restore and analyze underwater images, combining Waternet and Faster R-CNN to accomplish image restoration and extract color palettes from the images. Additionally, it analyzes the color variations present in the extracted palettes.
 
-![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/img/0427/frame9125_waternet.jpg?token=GHSAT0AAAAAAB6YHCBA5RHV4OFOP3MS73YQZEEJSLA)
+功能：
+1. 使用 Faster R-CNN 擷取圖片上的色板
+2. 使用 Waternet 還原水下影像
+3. 使用 Delta E 、色彩通道差的百分比來分析色板的色彩差異性
+4. 使用分割的介面，用滑鼠拖動，來比較還原前後的影像
 
-![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/img/frame9125.jpg?token=GHSAT0AAAAAAB6YHCBB3DSD2ATRCVGRHHDAZEEJTAA)
+Features:
+1. Use Faster R-CNN to extract color palettes from images.
+2. Use Waternet to restore underwater images.
+3. Use Delta E and the percentage of color channel differences to analyze the color differences in the color palettes.
+4. Use the segmentation interface to compare the restored images before and after dragging with the mouse.
+
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125.jpg?raw=true)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125_waternet.jpg?raw=true)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true)
 
 [report](https://hackmd.io/@tana0101/ai_report)
 [bubbliiiing/faster-rcnn-pytorch](https://github.com/bubbliiiing/faster-rcnn-pytorch)
@@ -76,9 +89,12 @@ optional arguments:
 Use `python process.py --source <image path> --weights <weight path>` to restore a specific image with a specific weight.
 If the location is not specified, the source: `input/temp.jpg` and weights: `waternet/training/6/last.pt` will be used.
 
-![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/result/result_20/unwarp_restored_model%20and%20Standard_image.png?token=GHSAT0AAAAAAB6YHCBAPFAW2Z7J3TGNSEOYZEEJUAQ)
-![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/result/result_20/Histogram%20of%20delta_e.png?token=GHSAT0AAAAAAB6YHCBAXMRET46NF5YLNKGCZEEJUHA)
-![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/result/result_20/delta_e_1.png?token=GHSAT0AAAAAAB6YHCBAT5CTXB664LTEVAE4ZEEJUDQ)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/unwarp_restored_model%20and%20Standard_image.png?raw=true)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/Histogram%20of%20delta_e.png?raw=true)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop1.png?raw=true)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop2.png?raw=true)
+![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true)
 
 ## Contributing
 
