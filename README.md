@@ -44,6 +44,14 @@ pip install -r requirements.txt
 
 注意：此專案使用的 python 版本為 3.8.10 ，若您的 python 版本差距過大，可能會有套件無法正常使用的問題。
 
+3. 提供權重檔案：
+[Google Drive](https://drive.google.com/drive/folders/1wssEZllBeeDrbbDngec0sYgXcW5aBs6Y?usp=drive_link)
+Faster R-CNN 權重位置：`warernet_fasterRCNN/logs/ep195-loss0.379-val_loss0.581.pth`
+waterNet 預設權重位置：`warernet_fasterRCNN/waternet/training/6/last.pt`
+注意：請將兩個權重檔案都放置於對應的位置，在不指定權重位置的情況下，就能夠正常執行。
+
+您也可以使用`process.py --weights WEIGHTS`指定位置，詳細使用請參考下方的 Usage。
+
 <hr>
 
 + To run this project on your local machine, follow these steps:
@@ -59,7 +67,15 @@ pip install -r requirements.txt
 ```
 This will install all the necessary packages for this project.
 
-Note: This project uses python version 3.8.10. If your python version is too different, there may be problems with some packages.
+Note: This project uses python version 3.8.10. If your python version is too different, there may be problems with the packages.
+
+3. Provide weight files:
+[Google Drive](https://drive.google.com/drive/folders/1wssEZllBeeDrbbDngec0sYgXcW5aBs6Y?usp=drive_link)
+Faster R-CNN weight location: `warernet_fasterRCNN/logs/ep195-loss0.379-val_loss0.581.pth`
+waterNet default weight location: `warernet_fasterRCNN/waternet/training/6/last.pt`
+Note: Please put both weight files in the corresponding locations. If the weight location is not specified, the program will run normally.
+
+You can also use `process.py --weights WEIGHTS` to specify the location. For details, please refer to the Usage below.
 
 ## Usage
 
@@ -77,6 +93,12 @@ optional arguments:
 
 如果不指定位置，則會使用 source: `input/temp.jpg`與 weights: `waternet/training/6/last.pt`。
 
++ 使用範例：
+
+```bash
+python process.py --source input/temp.jpg --weights waternet/training/6/last.pt
+```
+
 <hr>
 
 + Using process.py:
@@ -93,6 +115,12 @@ optional arguments:
 Use `python process.py --source <image path> --weights <weight path>` to restore a specific image with a specific weight.
 
 If the location is not specified, the source: `input/temp.jpg` and weights: `waternet/training/6/last.pt` will be used.
+
++ Example:
+
+```bash
+python process.py --source input/temp.jpg --weights waternet/training/6/last.pt
+```
 
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/unwarp_restored_model%20and%20Standard_image.png?raw=true)
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true)
