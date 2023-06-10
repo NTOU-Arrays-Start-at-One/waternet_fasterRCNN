@@ -4,14 +4,14 @@
 
 This project aims to use deep learning to restore and analyze underwater images, combining Waternet and Faster R-CNN to accomplish image restoration and extract color palettes from the images. Additionally, it analyzes the color variations present in the extracted palettes.
 
-![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/641aa952c32ddf29d9b7486167c741e74b8f18e0/result/result_18/delta_e_1_unwarp_restored_model.png?token=AXRCWXMAZQMEKDUNBI3YQL3EQRES6)
+![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/img/0427/frame9125_waternet.jpg?token=GHSAT0AAAAAAB6YHCBA5RHV4OFOP3MS73YQZEEJSLA)
 
+![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/img/frame9125.jpg?token=GHSAT0AAAAAAB6YHCBB3DSD2ATRCVGRHHDAZEEJTAA)
 
 [report](https://hackmd.io/@tana0101/ai_report)
 [bubbliiiing/faster-rcnn-pytorch](https://github.com/bubbliiiing/faster-rcnn-pytorch)
 [tnwei/waternet](https://github.com/tnwei/waternet)
-[Perspective-control-and-Color-testing](https://github.com/NTOU-Arrays-Start-at-One/Perspective-control-and-Color-testing.git)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15IAx8eKlwPET7O_HTYrmF4C4BVypd9dP?usp=sharing)
+[Perspective-control-and-Color-testing](https://github.com/NTOU-Arrays-Start-at-One/Perspective-control-and-Color-testing.git) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15IAx8eKlwPET7O_HTYrmF4C4BVypd9dP?usp=sharing)
 
 ## Installation
 
@@ -27,6 +27,7 @@ git clone https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN.git
 pip install -r requirements.txt
 ```
 這個指令會安裝此專案所需的所有套件。
+注意：此專案使用的 python 版本為 3.8.10 ，若您的 python 版本差距過大，可能會有套件無法正常使用的問題。
 
 <hr>
 
@@ -42,28 +43,42 @@ git clone https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN.git
 pip install -r requirements.txt
 ```
 This will install all the necessary packages for this project.
+Note: This project uses python version 3.8.10. If your python version is too different, there may be problems with some packages.
 
 ## Usage
 
 + 使用 process.py ：
 
 ```bash
+usage: process.py [-h] [--source SOURCE] [--weights WEIGHTS]
 
-
+optional arguments:
+  -h, --help         show this help message and exit
+  --source SOURCE    Set the image path to be restored
+  --weights WEIGHTS  Set the weight path of waternet
 ```
+使用`python process.py --source <image path> --weights <weight path>`，即可將特定影像透過特定的權重還原。
+如果不指定位置，則會使用 source: `input/temp.jpg`與 weights: `waternet/training/6/last.pt`。
 
 <hr>
 
-+ To use this project, follow these steps:
-1. Place the original canvas image in the `src/Original directory` .
-2. Place the restored canvas image in the `src/Result_restored directory` .
-3. Run `python try.py` to display a comparison of the color difference and results.
-4. Upon completion, the text and images will be stored in the `result` directory.
++ Using process.py:
 
-Please follow the above steps to run the program. If you encounter any issues, contact the developers.
+```bash
+usage: process.py [-h] [--source SOURCE] [--weights WEIGHTS]
 
-![](https://github.com/NTOU-Arrays-Start-at-One/Perspective-control-and-Color-testing/blob/main/result/result/delta_e_1_unwarp_restored_model.png?raw=true)
-![](https://github.com/NTOU-Arrays-Start-at-One/Perspective-control-and-Color-testing/blob/main/result/result/delta_e_1.png?raw=true)
+optional arguments:
+  -h, --help         show this help message and exit
+  --source SOURCE    Set the image path to be restored
+  --weights WEIGHTS  Set the weight path of waternet
+```
+
+Use `python process.py --source <image path> --weights <weight path>` to restore a specific image with a specific weight.
+If the location is not specified, the source: `input/temp.jpg` and weights: `waternet/training/6/last.pt` will be used.
+
+![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/result/result_20/unwarp_restored_model%20and%20Standard_image.png?token=GHSAT0AAAAAAB6YHCBAPFAW2Z7J3TGNSEOYZEEJUAQ)
+![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/result/result_20/Histogram%20of%20delta_e.png?token=GHSAT0AAAAAAB6YHCBAXMRET46NF5YLNKGCZEEJUHA)
+![](https://raw.githubusercontent.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/main/result/result_20/delta_e_1.png?token=GHSAT0AAAAAAB6YHCBAT5CTXB664LTEVAE4ZEEJUDQ)
 
 ## Contributing
 
