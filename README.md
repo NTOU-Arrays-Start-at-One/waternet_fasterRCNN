@@ -98,7 +98,6 @@ If the location is not specified, the source: `input/temp.jpg` and weights: `wat
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true)
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/Histogram%20of%20delta_e.png?raw=true)
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop1.png?raw=true)
-![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true)
 
 ## Contributing
 
