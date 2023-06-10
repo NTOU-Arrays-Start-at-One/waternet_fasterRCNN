@@ -17,7 +17,7 @@ Features:
 4. Use the segmentation interface to compare the restored images before and after dragging with the mouse.
 
 <img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125.jpg?raw=true" alt="frame9125" width="300"><img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125_waternet.jpg?raw=true" alt="frame9125_waternet" width="300">
-<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true" alt="crop3" width="300">
+<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true" alt="crop3" width="300"><img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop2.png?raw=true" alt="crop2" width="300">
 
 <img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true" alt="delta_e_1" width="400">
 
@@ -94,7 +94,6 @@ If the location is not specified, the source: `input/temp.jpg` and weights: `wat
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true)
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/Histogram%20of%20delta_e.png?raw=true)
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop1.png?raw=true)
-![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop2.png?raw=true)
 ![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true)
 
 ## Contributing
