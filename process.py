@@ -53,8 +53,8 @@ if __name__ == "__main__":
 
     # args
     parser = argparse.ArgumentParser()
-    parser.add_argument("--source", type=str)
-    parser.add_argument("--weights", type=str)
+    parser.add_argument("--source", type=str, help="Set the image path to be restored") 
+    parser.add_argument("--weights", type=str, help="Set the weight path of waternet")
     args = parser.parse_args()
     
     # waternet
