@@ -71,9 +71,9 @@ Note: This project uses python version 3.8.10. If your python version is too dif
 
 3. Provide weight files:
 [Google Drive](https://drive.google.com/drive/folders/1wssEZllBeeDrbbDngec0sYgXcW5aBs6Y?usp=drive_link)
-Faster R-CNN weight location: `warernet_fasterRCNN/logs/ep195-loss0.379-val_loss0.581.pth`
-waterNet default weight location: `warernet_fasterRCNN/waternet/training/6/last.pt`
-Note: Please put both weight files in the corresponding locations. If the weight location is not specified, the program will run normally.
+  + Faster R-CNN weight location: `warernet_fasterRCNN/logs/ep195-loss0.379-val_loss0.581.pth`
+  + waterNet default weight location: `warernet_fasterRCNN/waternet/training/6/last.pt`
+  + Note: Please put both weight files in the corresponding locations. If the weight location is not specified, the program will run normally.
 
 You can also use `process.py --weights WEIGHTS` to specify the location. For details, please refer to the Usage below.
 
