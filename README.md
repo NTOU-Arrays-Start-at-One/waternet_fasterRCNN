@@ -16,14 +16,15 @@ Features:
 3. Use Delta E and the percentage of color channel differences to analyze the color differences in the color palettes.
 4. Use the segmentation interface to compare the restored images before and after dragging with the mouse.
 
-![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125.jpg?raw=true)
-![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125_waternet.jpg?raw=true)
-![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true)
-![](https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true)
+<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125.jpg?raw=true" alt="frame9125" width="400">
+<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/frame9125_waternet.jpg?raw=true" alt="frame9125_waternet" width="400">
+<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/crop3.png?raw=true" alt="crop3" width="400">
+<img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true" alt="delta_e_1" width="400">
 
-[report](https://hackmd.io/@tana0101/ai_report)
-[bubbliiiing/faster-rcnn-pytorch](https://github.com/bubbliiiing/faster-rcnn-pytorch)
-[tnwei/waternet](https://github.com/tnwei/waternet)
+
+[report](https://hackmd.io/@tana0101/ai_report) <br>
+[bubbliiiing/faster-rcnn-pytorch](https://github.com/bubbliiiing/faster-rcnn-pytorch) <br>
+[tnwei/waternet](https://github.com/tnwei/waternet) <br>
 [Perspective-control-and-Color-testing](https://github.com/NTOU-Arrays-Start-at-One/Perspective-control-and-Color-testing.git) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15IAx8eKlwPET7O_HTYrmF4C4BVypd9dP?usp=sharing)
 
 ## Installation
