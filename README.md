@@ -46,9 +46,9 @@ pip install -r requirements.txt
 
 3. 提供權重檔案：
 [Google Drive](https://drive.google.com/drive/folders/1wssEZllBeeDrbbDngec0sYgXcW5aBs6Y?usp=drive_link)
-Faster R-CNN 權重位置：`warernet_fasterRCNN/logs/ep195-loss0.379-val_loss0.581.pth`
-waterNet 預設權重位置：`warernet_fasterRCNN/waternet/training/6/last.pt`
-注意：請將兩個權重檔案都放置於對應的位置，在不指定權重位置的情況下，就能夠正常執行。
+  + Faster R-CNN 權重位置：`warernet_fasterRCNN/logs/ep195-loss0.379-val_loss0.581.pth`
+  + waterNet 預設權重位置：`warernet_fasterRCNN/waternet/training/6/last.pt`
+  + 注意：請將兩個權重檔案都放置於對應的位置，在不指定權重位置的情況下，就能夠正常執行。
 
 您也可以使用`process.py --weights WEIGHTS`指定位置，詳細使用請參考下方的 Usage。
 
