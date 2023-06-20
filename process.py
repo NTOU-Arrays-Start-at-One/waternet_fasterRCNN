@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
     # frcnn
     filename = os.path.basename(source_path)
-    output_path = os.path.expanduser("waternet/output/output/" + filename)
+    output_path = os.path.expanduser(os.path.join(os.getcwd(), "input", filename))
     image = Image.open(output_path)
     r_image = frcnn.detect_image(image, crop = crop, analyze = analyze)
     r_image.show()
