@@ -96,7 +96,7 @@ optional arguments:
 + 使用範例：
 
 ```bash
-python process.py --source input/temp.jpg --weights waternet/training/6/last.pt
+python process.py --source /input/temp.jpg --weights waternet/training/6/last.pt
 ```
 
 <hr>
