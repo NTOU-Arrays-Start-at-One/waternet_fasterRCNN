@@ -97,6 +97,11 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
                                     QMessageBox.Close)
             return
         pts = list(map(tuple, pts))
+        parent_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        output_file = os.path.join(parent_path, "points.txt")
+        # 將點陣列寫入輸出檔案
+        with open(output_file, 'w') as f:
+            f.write(', '.join(str(p) for p in pts))
         #print(pts)
         # 將點陣列作為返回值傳遞給主程式
         self.close()
