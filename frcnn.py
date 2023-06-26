@@ -31,7 +31,7 @@ class FRCNN(object):
         #   验证集损失较低不代表mAP较高，仅代表该权值在验证集上泛化性能较好。
         #   如果出现shape不匹配，同时要注意训练时的model_path和classes_path参数的修改
         #--------------------------------------------------------------------------#
-        "model_path"    : 'logs/ep085-loss0.491-val_loss0.562.pth',
+        "model_path"    : 'logs/ep195-loss0.379-val_loss0.581.pth',
         "classes_path"  : 'model_data/board_classes.txt',
         #---------------------------------------------------------------------#
         #   网络的主干特征提取网络，resnet50或者vgg

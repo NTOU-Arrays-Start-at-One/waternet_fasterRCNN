@@ -18,7 +18,7 @@ from ColorAnalysis import GUI
 def call_inference(source_path, weights_path): # inference.py (WaterNet) 
     # 設定參數
     inference_path = os.path.expanduser("waternet/inference.py")
-    output_path = os.path.expanduser("output")
+    output_path = os.path.expanduser("")
     
     #使用subprocess.call()來呼叫inference.py程式
     subprocess.call([
@@ -55,6 +55,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=str, help="Set the image path to be restored") 
     parser.add_argument("--weights", type=str, help="Set the weight path of waternet")
+    parser.add_argument("--waternet", action="store_true", help="Use waternet to restore and then analyze")
     args = parser.parse_args()
     
     # waternet
@@ -62,12 +63,15 @@ if __name__ == "__main__":
         source_path = os.path.expanduser(args.source)
     if args.weights is not None:
         weights_path = os.path.expanduser(args.weights)
-
-    call_inference(source_path, weights_path)
+    if args.waternet:
+        call_inference(source_path, weights_path)
 
     # frcnn
     filename = os.path.basename(source_path)
     output_path = os.path.expanduser(os.path.join(os.getcwd(), "input", filename))
+    if args.waternet:
+        output_path = os.path.expanduser(os.path.join(os.getcwd(), "waternet/output", filename))
+
     image = Image.open(output_path)
     r_image = frcnn.detect_image(image, crop = crop, analyze = analyze)
     r_image.show()
