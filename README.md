@@ -1,8 +1,10 @@
 # waternet_fasterRCNN
 
 此專案以深度學習將水下影像還原並分析，結合 waternet 與 Faster R-CNN，分別完成水下影像還原與擷取圖片上的色板，並分析其色彩的差異性。
+注意❗❗：此專案的功能並不完善。後續版本請參考[Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind)
 
 This project aims to use deep learning to restore and analyze underwater images, combining Waternet and Faster R-CNN to accomplish image restoration and extract color palettes from the images. Additionally, it analyzes the color variations present in the extracted palettes.
+Warning❗❗: The functionality of this project is not yet complete. Please refer to the subsequent versions at [Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind).
 
 功能：
 1. 使用 Faster R-CNN 擷取圖片上的色板
