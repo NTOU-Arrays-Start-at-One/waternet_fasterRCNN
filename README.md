@@ -5,8 +5,8 @@
 ⚠️注意：此專案的功能並不完善。後續版本請參考[Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind)
 
 已知問題：
-1. 使用 Faster R-CNN 與透視校正進行色板抓取時，很多照片無法正常抓取，測試時可以使用專案中的 img/frame9125.jpg。
-2. 目前只能針對img內的色板進行分析，如果有其他規格的色板，需要針對程式碼進行重構，可以參考專案中的 /ColorAnalysis 資料夾。
+1. 使用 Faster R-CNN 與透視校正進行色板抓取時，很多照片無法正常抓取，測試時可以使用專案中的 `img/frame9125.jpg`。
+2. 目前只能針對img內的色板進行分析，如果有其他規格的色板，需要針對程式碼進行重構，可以參考專案中的 `/ColorAnalysis` 資料夾。
 3. 由於色板自動抓取並不穩定，所以後續版本將以手動抓取的 [Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind) 繼續更新。
 
 ⚠️Warning: The functionality of this project is not yet complete. Please refer to the subsequent versions at [Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind).
@@ -36,6 +36,7 @@ Features:
 
 <img src="https://github.com/NTOU-Arrays-Start-at-One/waternet_fasterRCNN/blob/main/src/delta_e_1.png?raw=true" alt="delta_e_1" width="400">
 
+## Reference
 
 [report](https://hackmd.io/@tana0101/ai_report) <br>
 [bubbliiiing/faster-rcnn-pytorch](https://github.com/bubbliiiing/faster-rcnn-pytorch) <br>
