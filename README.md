@@ -4,9 +4,20 @@
 
 ⚠️注意：此專案的功能並不完善。後續版本請參考[Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind)
 
-This project aims to use deep learning to restore and analyze underwater images, combining Waternet and Faster R-CNN to accomplish image restoration and extract color palettes from the images. Additionally, it analyzes the color variations present in the extracted palettes.
+已知問題：
+1. 使用 Faster R-CNN 與透視校正進行色板抓取時，很多照片無法正常抓取，測試時可以使用專案中的 img/frame9125.jpg。
+2. 目前只能針對img內的色板進行分析，如果有其他規格的色板，需要針對程式碼進行重構，可以參考專案中的 /ColorAnalysis 資料夾。
+3. 由於色板自動抓取並不穩定，所以後續版本將以手動抓取的 [Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind) 繼續更新。
 
 ⚠️Warning: The functionality of this project is not yet complete. Please refer to the subsequent versions at [Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind).
+
+This project aims to use deep learning to restore and analyze underwater images, combining Waternet and Faster R-CNN to accomplish image restoration and extract color palettes from the images. Additionally, it analyzes the color variations present in the extracted palettes.
+
+Known issues:
+
+1. When using Faster R-CNN and perspective correction for color palette extraction, many photos fail to be captured properly. To test, refer to the image at `img/frame9125.jpg` in the project.
+2. Currently, analysis can only be performed on color palettes within the img directory. If there are color palettes of other specifications, code restructuring is required. Refer to the `/ColorAnalysis` folder in the project for guidance.
+3. Due to the instability of automatic color palette extraction, subsequent versions will continue to update using manual extraction from [Give-ocean-a-piece-of-your-mind](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind).
 
 功能：
 1. 使用 Faster R-CNN 擷取圖片上的色板
